@@ -1,16 +1,16 @@
 <mat-toolbar>
-  <button routerLink="">
+  <button mat-raised-button routerLink="">
     Home
   </button>
-  <button routerLink="/login">
-    Home
+  <button mat-raised-button routerLink="/menu">
+    Menu
   </button>
-  <button routerLink="/menu">
-    Home
+  <button mat-raised-button routerLink="/cart">
+    cart
   </button>
-  <button routerLink="/cart">
-    Home
+  <button mat-raised-button routerLink="/login">
+    Login
   </button>
 </mat-toolbar>
 
-{{title}}
+<router-outlet></router-outlet>
