@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Angular Material
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { RouterLink } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +16,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterLink,
+    //Angular Material
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
