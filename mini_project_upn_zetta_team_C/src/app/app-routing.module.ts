@@ -8,19 +8,19 @@ import { MenuRoutingModule } from './menu/menu-routing.module';
 const routes: Routes = [
   {
     path:"",
-    component:HomeRoutingModule
+    loadChildren:() => import('./home/home.module').then(m=>m.HomeModule)
   },
   {
     path:'menu',
-    component:MenuRoutingModule
+    loadChildren:() => import('./menu/menu.module').then(m=>m.MenuModule)
   },
   {
     path:'login',
-    component:LoginRoutingModule
+    loadChildren:() => import('./login/login.module').then(m=>m.LoginModule)
   },
   {
     path:'cart',
-    component:CartRoutingModule
+    loadChildren:() => import('./cart/cart.module').then(m=>m.CartModule)
   }
 ];
 
