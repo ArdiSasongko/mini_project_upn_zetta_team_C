@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h4 class="mb-2 mt-2" style="text-align:center;">Menu</h4>
+    <div class="d-flex justify-content-start flex-wrap">
+        <ng-container *ngFor="let menu of menu">
+            <div class="py-2 px-2">
+                <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="{{menu.img}}" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">{{menu.name}} | Rp.{{menu.price}}</h5>
+                        <div class="text-center">
+                            <button mat-button routerLink="/menu/{{menu.id}}">Detail</button>
+                            <button mat-button>Add</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- <mat-card-header class="card">
+                    <mat-card-title-group>
+                        <img class="img-card mb-2" src='{{menu.img}}' alt="{{menu.name}}">
+                        <h2 class="text-right">{{menu.name}}</h2>
+                        <h4 class="text-left">{{menu.price}}</h4>
+                    </mat-card-title-group>
+                    <mat-card-actions>
+                        <button mat-raised-button routerLink="">Detail</button>
+                        <span>    </span>
+                        <button mat-raised-button>Add</button>
+                    </mat-card-actions>
+                </mat-card-header> -->
+            </div>
+        </ng-container>
+    </div>
+</div>

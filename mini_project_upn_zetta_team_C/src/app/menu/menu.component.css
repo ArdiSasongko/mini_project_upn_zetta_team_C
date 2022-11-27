@@ -1,0 +1,13 @@
+.card{
+    height: 390px;
+    width: 400px;
+}
+
+.img-card{
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
