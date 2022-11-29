@@ -20,6 +20,10 @@ import { MenuModule } from './menu/menu.module';
 import { MenuRoutingModule } from './menu/menu-routing.module';
 import { CartModule } from './cart/cart.module';
 import { CartRoutingModule } from './cart/cart-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ApolloModule } from 'apollo-angular';
+import { GrapqlModule } from './grapql/grapql.module';
+//import { HttpLinkModule } from 'apollo-angular-link-http';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,9 @@ import { CartRoutingModule } from './cart/cart-routing.module';
     //Angular Material
     MatToolbarModule,
     MatButtonModule,
-    
+    ApolloModule,
+    HttpClientModule,
+    GrapqlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

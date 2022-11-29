@@ -1,8 +1,58 @@
 <section class="homepage">
     <div class="homepage-button">
-        <a href="#about" class="button">
-            Ayok Mulai
+        <a href="#about-us" class="button">
+            About
         </a> 
+    </div>
+</section>
+
+<div class="container" id="about-us">
+    <section class="about-us text-center">
+        <div class="about-us__text">
+            <h1 class="about-us__header">WE ARE NOT JUST A RESTAURANT</h1>
+            <p class="about-us__paragraph">We are a team of people whose passion is to take care of every detail that makes for a unique evening spent with us. Our chefs create dishes whose recipe they sometimes worked half of their lives, and the secrets of their recipes they took from their family homes.</p>
+            <p class="about-us__paragraph">Our waiters are passionate people who love to create a unique atmosphere around our guests and serve dishes with elegance and class. Our restaurant will not lack atmospheric sounds, tasty decor and beautiful views from the windows. It's the perfect place to spend time with your loved one, eat dinner in a family atmosphere or thank a loved one for being there.</p>
+        </div>
+    </section>
+</div>
+
+<section class="bookmark bookmark--menu" id="menu">
+    <h2 class="bookmark__header">Menu</h2><br><br><br>
+    <a routerLink="/menu" class="button">Order Here!!</a>
+</section>
+
+<section class="bookmark bookmark--contact" id="contact">
+    <h2 class="bookmark__header">Contact</h2> <br><br><br>
+    <p class="bookmark__description">Check how to contact us</p>
+</section>
+
+<section class="form-section">
+    <div class="container">
+        <div class="contact-form__info">
+            <div class="contact-info__item">
+                <a class="contact-form__info-link" href="tel:530393651">
+                    0896 3213 4123
+                </a>
+            </div>
+            <div class="contact-info__item ">
+                <a href="mailto:Our_Restaurant@gmail.com " class="contact-form__info-link">
+                    Our_Restaurant@gmail.com
+                </a>
+            </div>
+        </div>
+        <p class="contact-form__text">
+            If you have not found the information you need on our website, <br> send the contact form or call us. <br> We will be happy to talk to you and answer all your questions.            </p>
+
+        <form class="contact-form">
+            <input name="name" class="contact-form__field" required placeholder="First name and last name">
+            <input name="email" class="contact-form__field" required placeholder="Email Address">
+            <textarea class="contact-form__field contact-form__field-textarea" placeholder="Message content" required rows="10"></textarea>
+
+            <button class="contact-form__submit-button" type="submit">
+                Send
+            </button>
+        </form>
+
     </div>
 </section>
 

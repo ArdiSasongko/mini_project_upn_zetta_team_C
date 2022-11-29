@@ -23,3 +23,271 @@
     color:white;
 }
 
+.container
+{   
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding:60px 20px;
+    background: rgba(202,154,78,255);
+}
+
+.about-us
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us__header{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+@media(max-width: 767px)
+{
+    .about-us__header{
+        font-size: 25px;
+        margin:0;
+    }
+}
+
+.about-us__paragraph
+{
+    line-height: 1.9;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+@media(max-width: 767px)
+{
+    .about-us__paragraph{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.about-us__image
+{
+    width:40%;
+    margin-left: 30px;
+}
+
+@media(max-width: 767px)
+{
+    .about-us__image{
+        display: none;
+    }
+}
+
+.bookmark
+{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    padding: 8vh 5vw;
+    z-index: 0;
+}
+@media(max-width:991px)
+{
+    .bookmark
+    {
+        padding: 6vh 4vw;
+        z-index: 0;
+    }
+}
+.bookmark--menu
+{
+    background-image: url("../../../Assets/menu.jpeg");
+}
+
+.bookmark--contact
+{
+    background-image: url("../../../Assets/contact.jpg");
+}
+
+.bookmark::after{
+    content:"";
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(67,53,18,0.6);
+    z-index: -1;
+}
+.bookmark__header
+{
+    font-size: 120px;
+    text-transform: uppercase;
+    margin: 0;
+}
+@media(max-width:1199px)
+{
+    .bookmark__header
+{
+    font-size: 10vw;
+}
+}
+.bookmark__header::after,
+.bookmark__header::before
+{
+    content:" - ";
+    font-weight: normal;
+}
+.bookmark__description
+{
+    font-size: 25px;
+}
+@media(max-width:1199px)
+{
+    .bookmark__description
+    {
+        font-size: 4vw;
+    }
+}
+.form-section {
+    display: flex;
+    align-items: center;
+    background: rgba(146,125,78,255);
+    color: white;
+}
+
+.form-section .container {
+    width: 65%;
+}
+
+@media(max-width:991px) {
+    .form-section .container {
+        width: 85%;
+    }
+}
+
+.contact-form__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:767px) {
+    .contact-form__info {
+        display: block;
+    }
+}
+
+.contact-form__info-link {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4px;
+}
+
+@media(max-width:767px) {
+    .contact-form__info-link {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media(max-width:991px) {
+    .contact-form__info-link {
+        font-size: 23px;
+    }
+}
+
+@media(max-width:767px) {
+    .contact-form__info-link {
+        font-size: 16px;
+    }
+}
+
+.contact-form__info-link:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+.contact-info__icon {
+    height: 35px;
+    padding-right: 10px;
+}
+
+.contact-form__text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+@media(max-width:991px) {
+    .contact-form__text {
+        font-size: 16px;
+    }
+}
+
+.contact-info__item {
+    margin: 0 30px;
+}
+
+@media(max-width:767px) {
+    .contact-info__item {
+        margin: 0;
+    }
+}
+
+.contact-form__field {
+    background: rgba(237,221,181,255);
+    border: none;
+    margin: 5px 5px;
+    padding: 15px;
+    width: calc(50% - 20px);
+    flex-grow: 1;
+    resize: none;
+}
+
+@media(max-width:767px) {
+    .contact-form__field {
+        width: 100%;
+    }
+}
+
+.contact-form__field::placeholder {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+
+.contact-form__submit-button {
+    padding: 15px 20px;
+    border: none;
+    font-size: larger;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media(max-width:767px) {
+    .contact-form__submit-button {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
+
+.contact-form__field-textarea {
+    width: 100%;
+}

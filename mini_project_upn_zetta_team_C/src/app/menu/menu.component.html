@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <h4 class="mb-2 mt-2" style="text-align:center;">Menu</h4>
-    <div class="d-flex justify-content-start flex-wrap">
+    <div class="d-flex justify-content-center flex-wrap">
         <ng-container *ngFor="let menu of menu">
             <div class="py-2 px-2">
                 <div class="card-deck">
@@ -10,7 +10,7 @@
                         <h5 class="card-title text-center">{{menu.name}} | Rp.{{menu.price}}</h5>
                         <div class="text-center">
                             <button mat-button routerLink="/menu/{{menu.id}}">Detail</button>
-                            <button mat-button>Add</button>
+                            <button mat-button (click)="addCart(menu)">Add</button>
                         </div>
                       </div>
                     </div>
