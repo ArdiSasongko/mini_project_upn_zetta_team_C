@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  Api : 'https://api.zettacamp-upn.zetta-demo.space/graphql'
+  Api : 'https://api.zettacamp-upn.zetta-demo.space/graphql',
+  tokenKey :'token',
 };
 
 /*

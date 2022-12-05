@@ -22,7 +22,7 @@ import { CartModule } from './cart/cart.module';
 import { CartRoutingModule } from './cart/cart-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApolloModule } from 'apollo-angular';
-import { GrapqlModule } from './grapql/grapql.module';
+import { GraphqlModule } from './graphql.module';
 //import { HttpLinkModule } from 'apollo-angular-link-http';
 
 @NgModule({
@@ -49,7 +49,7 @@ import { GrapqlModule } from './grapql/grapql.module';
     MatButtonModule,
     ApolloModule,
     HttpClientModule,
-    GrapqlModule
+    GraphqlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
